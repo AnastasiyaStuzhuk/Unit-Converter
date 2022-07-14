@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Unit converter</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<section class="main-wrapper">
+			<form id="form" class="form">
+				<h1 class="title1">Metric/Imperial Unit Conversion</h1>
+				<input class="input" required type="number" required min="1" max="1000" id="get-number" placeholder="1">
+				<label for="get-number" class="visually-hidden">Enter number to convert</label>
+				<button class="button" type="submit" id="convert-btn">Convert</button>
+			</form>
+			<div class="output-container">
+				<div class="output-item">
+					<h2 class="title2">Length (Meter/Feet)</h2>
+					<p class="value" id="output-length">
+						1 meters = 3.281 feet | 1 feet = 0.305 meters
+					</p>
+				</div>
+				<div class="output-item">
+					<h2 class="title2">Volume (Liters/Gallons)</h2>
+					<p class="value" id="output-volume">
+						1 liters = 0.264 gallons | 1 gallons = 3.788 liters
+					</p>
+				</div>
+				<div class="output-item">
+					<h2 class="title2">Mass (Kilograms/Pounds)</h2>
+					<p class="value" id="output-mass">
+						1 kilos = 2.204 pounds | 1 pounds = 0.454 kilos
+					</p>
+				</div>
+			</div>
+		</section>
+		<script src="index.js"></script>
+	</body>
+</html>
